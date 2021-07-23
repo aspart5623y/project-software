@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    outline: none !important;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eaefe973;
+}
+.btn{
+    border-radius: 40px;
+    box-shadow: none !important;
+}
+
+.btn-warning{
+    color: white;
+}
+.btn-warning:hover{
+    box-shadow: 0 0px 7px 0px rgba(0, 0, 0, 0.39) !important;
+    color: white;
+}
+
+
+
+
+/* ========================  P R E L O A D E R  ======================= */
+#preloader {
+    position: fixed;
+    top: 0px !important;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+#preloader .progress {
+    height: 5px !important;
+    width: 400px !important;
+}
+#preloader.loaded {
+    opacity: 1;
+    z-index: 9999;
+    animation-name: fadeout;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+/* ========================  A M I N A T I O N  ======================= */
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+/* ========================  L O G I N    A U T H E N T I C A T I O N  ======================= */
+.login-page .auth-body .col-lg-6 .auth{
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.auth-body .col-lg-6 .auth .auth-bg{
+    width: 75%;
+    height: 635px;
+    position: absolute;
+    padding: 0 50px;
+    justify-self: center;
+}
+.auth-body .col-lg-6 .auth .auth-container{
+    background-color: white !important;
+    position: relative;
+    padding: 30px 30px 80px 30px;
+    margin-top: 50px;
+}
+
+/* ========================  R E G    A U T H E N T I C A T I O N  ======================= */
+.reg-page .auth-body .auth{
+    margin: 100px 15px 50px 15px;
+}
+.reg-page .auth-body .auth .row .col-lg-4{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.reg-page .auth-body .auth .row .col-lg-4 .image-zone-overlay{
+    background: linear-gradient(to top, #007bffcb, #00e1ffc2);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.reg-page .auth-body .auth .row .col-lg-6{
+    padding: 80px 20px;
+}
+
+
+
+
+/* ========================  F O R M    C O N T R O L  ======================= */
+.input-group .form-control{
+    box-shadow: none !important;
+    transition: 0.2s all ease-in-out;
+    border: none;
+    background-color: transparent;
+    padding: 26px 5px !important;
+}
+
+
+.input-group .input-group-text{
+    background-color: transparent;
+    border: none;
+    padding: 20px !important;
+}
+.input-group {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 40px;
+}
+.input-group label {
+    position: absolute;
+    z-index: 10;
+    top: 14px;
+    left: 55px;
+    transition: 0.2s all ease-in-out;
+}
+.input-group label:hover {
+    cursor: text;
+}
+.input-group .form-control:focus ~ label{
+    top: 0px;
+    font-size: 12px;
+}
+.input-group .form-control:valid ~ label{
+    top: 0px;
+    font-size: 12px;
+    color: gray;
+}
+
+.fa-eye-slash {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 14px;
+    }
+
+    .auth-body .col-lg-6 .auth{
+        margin: 70px 0;
+    }
+
+    .auth-body .col-lg-6 .auth .auth-bg{
+        width: 90%;
+        height: 550px;
+    }
+    .auth-body .col-lg-6 .auth .auth-container{
+        margin-top: 32px;
+        padding: 20px 20px 40px 20px;
+
+    }
+}

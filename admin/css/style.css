@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    outline: none !important;
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+}
+body { 
+    background-color: #eaefe973 !important;
+}
+.btn{
+    border-radius: 40px;
+    box-shadow: none !important;
+}
+.alert{
+    border-radius: 40px;
+}
+.btn-primary:hover{
+    box-shadow: 0 0px 7px 0px rgba(0, 0, 0, 0.39) !important;
+}
+textarea.form-control{
+    border-radius: 5px;
+}
+.form-control{
+    border-radius: 40px;
+    box-shadow: none !important;
+    padding: 15px;
+    background-color: #eaefe986;
+    transition: 0.2s all ease-in-out;
+}
+
+
+.form-control:focus{
+    border-color: #007bff !important;
+    background-color: #eaefe93d;
+}
+.custom-control, .custom-control-input, .custom-control-label  {
+    box-shadow: none !important;
+}
+.custom-select {
+    height: 50px !important;
+    box-shadow: none !important;
+    border-radius: 40px;
+}
+
+/* ========================  P R E L O A D E R  ======================= */
+#preloader {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#preloader.loaded {
+    opacity: 1;
+    z-index: 9999;
+    animation-name: fadeout;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+/* ========================  A M I N A T I O N  ======================= */
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+
+/* ========================  N A V B A R  ======================= */
+.navbar {
+    position: fixed;
+    top: 0px;
+}
+.navbar .nav-link.active{
+    transition: .2s all ease-in-out;
+}
+.navbar .nav-link.active{
+    color: #007bff !important;
+}
+.navbar .container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+/* ========================  N A V B A R     D R O P D O W N  ======================= */
+
+.navbar .navbar-nav .dropdown-menu{
+    left: -130px !important;
+}
+
+.navbar .navbar-nav .notification-dropdown .dropdown-menu{
+    left: -190px !important;
+}
+.navbar .navbar-nav .notification-dropdown .dot.active{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.navbar .navbar-nav .notification-dropdown .dropdown-menu{
+    width: 300px !important;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.navbar .navbar-nav .notification-dropdown .dropdown-menu .dropdown-item p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 260px;
+    font-size: 14px;
+}
+.navbar .navbar-nav .notification-dropdown .dropdown-menu .dropdown-item span{
+    font-size: 11px;
+}
+
+/* ========================  S I D E B A R  ======================= */
+#sidebar{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:white;
+    z-index: 100;
+    transition: 0.2s all ease-in-out;
+}
+#sidebar .sidebar-nav{
+    margin-top: 140px;
+    padding: 0%;
+}
+#sidebar .sidebar-nav .sidebar-link{
+    color: black;
+    display: block;
+    padding: 20px;
+    margin: 0;
+    transition: 0.3s all ease-in-out;
+}
+#sidebar .sidebar-nav .sidebar-link.active{
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+#sidebar .sidebar-nav .sidebar-link:hover{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #007bff27;
+}
+
+/* ========================  M A I N      P A G E  ======================= */
+#main-page{
+    padding-left: 250px;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: 0.2s ease-in-out;
+}
+
+
+/* ========================  A D M I N - P A N E L  ======================= */
+.admin-panel.active #sidebar{
+    left: -250px;
+    transition: 0.2s ease-in-out;
+}
+
+.admin-panel.active #main-page{
+    padding-left: 0px;
+    transition: 0.2s ease-in-out;
+}
+
+/* ========================  M A S T H E A D  ======================= */
+.masthead {
+    padding: 30px 0;
+}
+.masthead .rate-counter{
+    margin: 20px 10px;
+    padding: 20px;
+    text-align: center;
+}
+.masthead .rate-counter h1{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+
+/* ========================  S E R V I C E S  ======================= */
+.services {
+    padding: 40px 0;
+}
+
+/* ========================  I N C O M I N G     S E C T I O N  ======================= */
+.incoming-appointment {
+    margin: 50px 0px 150px 0px;
+}
+.incoming-appointment .appointment-table table th, .incoming-appointment .appointment-table table td {
+    white-space: nowrap;
+}
+
+/* Appoointment Modal Code****************** */
+.rejected-form{
+    display: none;
+}
+
+/* ========================  B O O K I N G     S E C T I O N  ======================= */
+.booking-section {
+    margin: 50px 0px 100px 0px;
+}
+.booking-section .booking-form .col-lg-7{
+    padding: 40px 30px;
+    height: 600px;
+}
+
+.booking-section .booking-form .col-lg-7 .can .back-btn{
+    float: right;
+}
+.booking-section .booking-form .col-lg-8{
+    padding: 50px 30px;
+    /* height: 300px; */
+}
+.booking-section .booking-form .col-lg-8 .booking-success-icon {
+    margin: 25px;
+}
+.booking-section .booking-form .col-lg-8 .booking-success-icon i{
+    font-size: 80px;
+}
+/* MULTIPLE STEP FORM */
+.new {
+    display: none;
+}
+.new.active {
+    display: block;
+}
+
+/* ========================  U S E R     D A S H B O A R D  ======================= */
+.user-dashboard {
+    margin: 50px 0 100px 0;
+}
+
+.user-dashboard .dashboard .row{
+    padding: 40px 30px;
+}
+.user-dashboard .dashboard .col-lg-8 .dashboard-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* ========================  A L L      C O N T A C T S  ======================= */
+.contacts {
+    margin: 50px 0 100px 0;
+}
+
+
+
+/* ========================  F O R M      C O N T R O L  ======================= */
+.input-group .form-control{
+    box-shadow: none !important;
+    transition: 0.2s all ease-in-out;
+    border: none;
+    background-color: transparent;
+    padding: 26px 5px !important;
+}
+
+
+.input-group .input-group-text{
+    background-color: transparent;
+    border: none;
+    padding: 20px !important;
+}
+.input-group {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 40px;
+}
+.input-group label {
+    position: absolute;
+    z-index: 10;
+    top: 14px;
+    left: 55px;
+    transition: 0.2s all ease-in-out;
+}
+.input-group label:hover {
+    cursor: text;
+}
+.input-group .form-control:focus ~ label{
+    top: 0px;
+    font-size: 12px;
+}
+.input-group .form-control:valid ~ label{
+    top: 0px;
+    font-size: 12px;
+    color: gray;
+}
+.input-group .form-t-d{
+    border: transparent;
+    background-color: transparent;
+    width: 60%;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    #sidebar .sidebar-nav{
+        margin-top: 100px;
+        padding: 0%;
+    }
+    #sidebar{
+        left: -250px;
+    }
+    #main-page{
+        padding-left: 0px;
+    }
+    .admin-panel.active #sidebar{
+        left: 0px;
+    }
+    .admin-panel.active #main-page{
+        padding-left: 0px;
+    }
+    .breadcrumb{
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 14px;
+    }
+    .masthead .rate-counter h1{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 6px;
+    }
+    .masthead .rate-counter .media i{
+        font-size: 22px !important;
+    }
+    .booking-section .booking-form .col-lg-7{
+        padding: 40px 15px;
+        height: 700px;
+    }
+    
+}

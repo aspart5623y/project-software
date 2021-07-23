@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-size: 15px;
+    outline: none !important;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eaefe973;
+}
+.btn{
+    border-radius: 40px;
+    box-shadow: none !important;
+}
+.alert{
+    border-radius: 40px;
+}
+.btn-primary:hover{
+    box-shadow: 0 0px 7px 0px rgba(0, 0, 0, 0.39) !important;
+}
+textarea.form-control{
+    border-radius: 5px;
+}
+.form-control{
+    border-radius: 40px;
+    box-shadow: none !important;
+    padding: 15px;
+    background-color: #eaefe986;
+    transition: 0.2s all ease-in-out;
+    
+}
+
+.form-control:focus{
+    border-color: #007bff !important;
+    background-color: #eaefe93d;
+}
+
+
+/* ========================  P R E L O A D E R  ======================= */
+#preloader {
+    position: fixed;
+    top: 0px !important;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+#preloader.loaded {
+    opacity: 1;
+    z-index: 9999;
+    animation-name: fadeout;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+/* ========================  A M I N A T I O N  ======================= */
+@keyframes fadeout{
+    0% {
+        opacity: 1;
+        z-index: 9999;
+    }
+    100% {
+        opacity: 0;
+        z-index: -9999;
+    }
+}
+
+/* ========================  N A V B A R  ======================= */
+.navbar .nav-link.active{
+    transition: .2s all ease-in-out;
+}
+.navbar .nav-link.active{
+    color: #007bff !important;
+}
+
+/* ========================  N A V B A R     D R O P D O W N  ======================= */
+.navbar .manageAppoint-dropdown .dropdown-menu {
+    border: none;
+    box-shadow: 0px 0px 7px 0px lightgrey;
+    border-radius: 0px;
+}
+
+
+
+/* ========================  M A S T H E A D  ======================= */
+.masthead {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+.masthead-content {
+    padding: 100px 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ========================  S E R V I C E  ======================= */
+.services{
+    padding: 80px 0;
+}
+
+/* ========================  F E A T U R E S  ======================= */
+.features{
+    padding: 60px 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.features .features-header{
+    margin-bottom: 70px;
+}
+
+/* ========================  B I L L B O A R D  ======================= */
+.billboard {
+    padding: 80px 0;
+    background-image: url('../assets/bg/bg11.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* ========================  C O N T A C T  ======================= */
+.contact{
+    padding: 80px 0;
+    background: white;
+}
+
+
+/* ========================  B R E A D C R U M B  ======================= */
+.breadcrumb{
+    margin-top: 75px;
+}
+
+/* ========================  W R I T E     U P  =======================*/
+.write-up {
+    margin: 80px 10px;
+}
+
+
+/* ========================  O P T I O N  ======================= */
+.options {
+    margin: 70px 10px;
+}
+
+
+/* ========================  F O R M    C O N T R O L  ======================= */
+.input-group .form-control{
+    box-shadow: none !important;
+    transition: 0.2s all ease-in-out;
+    border: none;
+    background-color: transparent;
+    padding: 26px 5px !important;
+}
+
+
+.input-group .input-group-text{
+    background-color: transparent;
+    border: none;
+    padding: 20px !important;
+}
+.input-group {
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 40px;
+}
+.input-group label {
+    position: absolute;
+    z-index: 10;
+    top: 14px;
+    left: 55px;
+    transition: 0.2s all ease-in-out;
+}
+.input-group label:hover {
+    cursor: text;
+}
+.input-group .form-control:focus ~ label{
+    top: 0px;
+    font-size: 12px;
+}
+.input-group .form-control:valid ~ label{
+    top: 0px;
+    font-size: 12px;
+    color: gray;
+}
+.input-group .form-t-d{
+    border: transparent;
+    background-color: transparent;
+    width: 60%;
+}
+
+/* ========================  B O O K I N G     S E C T I O N  ======================= */
+.booking-section {
+    margin: 50px 0px 100px 0px;
+}
+.booking-section .booking-form .col-lg-7{
+    padding: 40px 30px 40px 150px;
+    height: 500px;
+}
+
+.booking-section .booking-form .col-lg-8{
+    padding: 50px 30px;
+    /* height: 300px; */
+}
+.booking-section .booking-form .col-lg-8 .booking-success-icon {
+    margin: 25px;
+}
+.booking-section .booking-form .col-lg-8 .booking-success-icon i{
+    font-size: 80px;
+}
+.booking-section .booking-form .col-lg-7 .can{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.booking-section .booking-form .col-lg-5{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    z-index: 1;
+}
+.booking-section .booking-form .col-lg-5 .booking-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 0px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: start;
+}
+.booking-section .booking-form .col-lg-7 .can .back-btn{
+    float: right;
+}
+/* MULTIPLE STEP FORM */
+.new {
+    display: none;
+}
+.new.active {
+    display: block;
+}
+
+
+/* ========================  I N C O M I N G     S E C T I O N  ======================= */
+.incoming-appointment {
+    margin: 50px 0px 150px 0px;
+}
+.incoming-appointment .appointment-table table th, .incoming-appointment .appointment-table table td {
+    white-space: nowrap;
+}
+
+/* Appoointment Modal Code****************** */
+.appointment-action {
+    display: none;
+}
+.appointment-action.active {
+    display: block;
+}
+.rejected-form{
+    display: none;
+}
+
+/* ========================  U S E R     D A S H B O A R D  ======================= */
+.user-dashboard {
+    margin: 50px 0 100px 0;
+}
+
+.user-dashboard .dashboard .row{
+    padding: 40px 30px;
+}
+.user-dashboard .dashboard .col-lg-8 .dashboard-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+/* ========================  F O R G O T     P A S S W O R D  ======================= */
+.forgot{   
+    margin: 150px 0 200px 0;
+}
+.forgot .dashboard .row{
+    padding: 40px 30px;
+}
+.forgot .dashboard .row .auth{
+    display: none;
+}
+.forgot .dashboard .row .auth.active{
+    display: block;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    /* N A V B A R */
+    .navbar .navbar-collapse {
+        height: 100vh !important;
+        width: 250px !important;
+        display: block;
+        z-index: 2500 !important;
+        position: fixed;
+        background-color:white;
+        top: 0px;
+        padding-top: 70px;
+        right: -250px;
+        overflow-y: auto;
+        transition: .2s all ease-in-out;
+    }
+    .sidebar-overlay {
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+        opacity: 0;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: 2s all ease-in-out;
+        z-index: 1500;
+    }
+    .navbar .navbar-collapse.open {
+        right: 0;
+        box-shadow: 0 0px 7px 0px rgba(0, 0, 0, 0.39) !important;
+    }
+    .sidebar-overlay.open {
+        display: block;
+        opacity: 1;
+    }
+    .navbar .navbar-collapse .nav-link{
+        padding: 1.15rem 1rem !important;
+    }
+    .navbar .navbar-collapse .nav-link.active{
+        background-color:#007bff;
+        color: white !important;
+    }
+    .navbar .navbar-collapse .nav-item .btn{
+        padding: 1.15rem 1rem !important;
+        color: gray;
+        background-color: transparent !important;
+        border-color: transparent !important;
+        display: block;
+        text-align: left;
+    }
+    .navbar .navbar-collapse .sidebar-toggler{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .navbar .navbar-collapse .sidebar-toggler span{
+        font-size: 40px;
+    }
+
+    .navbar .manageAppoint-dropdown .dropdown-menu {
+        box-shadow: none
+    }
+
+    .breadcrumb{
+        margin-top: 60px;
+    }
+
+    .booking-section .booking-form .col-lg-7{
+        padding: 40px 50px;
+        height: 700px;
+    }
+
+    .booking-section .booking-form .col-lg-7 .can{
+        flex-direction: column;  
+    }
+    
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    *{
+        font-size: 14px;
+    }
+    /* M A S T H E A D  */
+    .masthead {
+        height: 400px;
+        background-image: url('../assets/bg/pexels-ono-kosuki-5648064.jpg');
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+    .masthead-content {
+        padding: 100px 0;
+    }
+    .masthead-content h1{
+        font-size: 30px;
+        color: white;
+    }
+    .masthead-content h3{
+        color: white !important;
+    }
+    .masthead-overlay{
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .write-up {
+        margin: 40px 10px;
+    }
+
+    .booking-section .booking-form .col-lg-7{
+        padding: 40px 20px 40px 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
